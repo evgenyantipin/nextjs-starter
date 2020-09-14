@@ -1,4 +1,9 @@
-export default (state = {}, action) => {
+const initialState = {
+  posts: [],
+  post: {},
+};
+
+export default function reducer(state = initialState, action = {}) {
   switch (action.type) {
     case "GET_POSTS":
       return { ...state, posts: action.posts };
@@ -9,4 +14,4 @@ export default (state = {}, action) => {
     default:
       return state;
   }
-};
+}

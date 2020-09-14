@@ -2,7 +2,7 @@
 
 Production ready Next.js app with the following:
 
-- [x] Next.js 8.X
+- [x] Next.js 9.
 - [x] React 16.x with hooks
 - [x] Redux 4.x
 - [x] Redux-storage
