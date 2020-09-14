@@ -19,7 +19,7 @@ const Logo = styled.div`
   width: 80px;
   height: 24px;
   margin: 0 20px 0 0;
-  background: url(${props => props.src}) center center / cover no-repeat;
+  background: url(${(props) => props.src}) center center / cover no-repeat;
   outline: 0;
 `;
 
@@ -33,17 +33,18 @@ const LogoLink = styled.span`
 const Nav = () => (
   <Wrapper>
     <LogoLink>
-    <Link href="/">
-      <a>
-      <Logo src={nextLogo} /> Home
-      </a>
-    </Link></LogoLink>{" "}
+      <Link href="/">
+        <a>
+          <Logo src={nextLogo} /> Home
+        </a>
+      </Link>
+    </LogoLink>{" "}
     |
-    <Link href="/about" prefetch>
+    <Link href="/about">
       <a>About</a>
     </Link>{" "}
     |
-    <Link href="/contact" prefetch>
+    <Link href="/contact">
       <a>Contact</a>
     </Link>
   </Wrapper>

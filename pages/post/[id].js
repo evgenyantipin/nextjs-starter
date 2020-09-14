@@ -38,10 +38,10 @@ const PostPage = ({ post }) => (
   </Layout>
 );
 
-PostPage.getInitialProps = async ctx => {
+PostPage.getInitialProps = async (ctx) => {
   const slug = ctx.query.id;
   const { post } = await ctx.store.dispatch(getPost(slug));
-  return { post: post };
+  return { post };
 };
 
 export default PostPage;

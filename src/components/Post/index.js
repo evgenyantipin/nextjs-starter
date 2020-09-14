@@ -1,9 +1,12 @@
-import { Link } from "routes";
+import Link from "next/link";
 import Wrapper from "./Wrapper";
 
 const PostItem = ({ post }) => (
   <Wrapper>
-    <Link route="post" params={{ id: post.title }}>
+    <Link
+      href={`/post/[id]?id=${post.title}`}
+      as={`/post/${post.title}`}
+    >
       <a>
         <h3>{post.title}</h3>
         <p>{post.body}</p>

@@ -1,28 +1,25 @@
-import withRedux from "next-redux-wrapper";
-import { Provider } from "react-redux";
-import App, { Container } from "next/app";
-import { initializeStore } from "store";
+import React from "react";
+import App from "next/app";
+import { wrapper } from "store";
 
-class MyApp extends App {
-  static async getInitialProps({ Component, ctx }) {
+class WrappedApp extends App {
+  static getInitialProps = async ({ Component, ctx }) => {
     return {
-      pageProps: Component.getInitialProps
-        ? await Component.getInitialProps(ctx)
-        : {}
+      pageProps: {
+        // Call page-level getInitialProps
+        ...(Component.getInitialProps
+          ? await Component.getInitialProps(ctx)
+          : {}),
+        // Some custom thing for all pages
+        appProp: ctx.pathname,
+      },
     };
-  }
-  render() {
-    const { Component, pageProps, store, router } = this.props;
+  };
 
-    return (
-      <Container>
-        <Provider store={store}>
-          <Component router={router} {...pageProps} />
-        </Provider>
-      </Container>
-    );
+  render() {
+    const { Component, pageProps } = this.props;
+    return <Component {...pageProps} />;
   }
 }
 
-// export default withReduxStore(MyApp);
-export default withRedux(initializeStore, { debug: false })(MyApp);
+export default wrapper.withRedux(WrappedApp);

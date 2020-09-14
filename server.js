@@ -1,17 +1,14 @@
-const express = require("express");
+const polka = require("polka");
 const next = require("next");
-const routes = require("./src/routes");
 
 process.env.NODE_ENV = process.env.NODE_ENV || "production";
 process.env.PORT = process.env.PORT || 80;
 
 const app = next({ dev: process.env.NODE_ENV === "development" });
 const handle = app.getRequestHandler();
-const handler = routes.getRequestHandler(app);
 
 app.prepare().then(() => {
-  const server = express();
-  server.use(handler);
+  const server = polka();
 
   server.get("*", (req, res) => {
     return handle(req, res);

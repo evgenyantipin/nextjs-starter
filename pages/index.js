@@ -2,7 +2,8 @@ import Layout from "layouts/Main";
 import { getPosts } from "store/actions/posts";
 import Post from "components/Post";
 
-const IndexPage = ({ posts }) => (
+const IndexPage = ({posts}) => (
+
   <Layout>
     <ul>
       {posts.map(p => (
