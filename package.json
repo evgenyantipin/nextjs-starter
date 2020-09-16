@@ -32,21 +32,26 @@
     "next-optimized-images": "^2.6.2",
     "next-redux-wrapper": "^6.0.2",
     "next-runtime-dotenv": "^1.3.0",
+    "preact": "^10.4.8",
+    "preact-render-to-string": "^5.1.10",
     "prop-types": "^15.7.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react": "github:preact-compat/react#1.0.0",
+    "react-dom": "github:preact-compat/react-dom#1.0.0",
     "react-redux": "7.2.0",
+    "react-ssr-prepass": "^1.2.1",
     "redux": "4.0.5",
     "redux-thunk": "^2.3.0",
     "styled-components": "^4.1.3"
   },
   "devDependencies": {
+    "@prefresh/next": "^1.1.0",
     "@zeit/next-source-maps": "^0.0.3",
     "babel-plugin-styled-components": "^1.10.0",
-    "redux-logger": "^3.0.6",
     "husky": "^4.2.5",
     "lint-staged": "10.2.13",
-    "prettier": "2.1.1"
+    "prettier": "2.1.1",
+    "react-refresh": "^0.8.3",
+    "redux-logger": "^3.0.6"
   },
   "engines": {
     "node": ">=10"
