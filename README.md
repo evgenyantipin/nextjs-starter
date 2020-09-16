@@ -1,4 +1,4 @@
-### Next.js Starter
+### Next.js Starter 🚀
 
 Production ready Next.js app with the following:
 
