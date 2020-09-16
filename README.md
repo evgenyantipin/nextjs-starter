@@ -1,6 +1,4 @@
-### Next.js Starter 🚀
-
-Production ready Next.js app with the following:
+### 🚀Super charged Next.js starter app with the following:
 
 ## [You can see a live demo](https://next-redux-starter.evgenyantipin.vercel.app)
 - [x] Next.js latest
