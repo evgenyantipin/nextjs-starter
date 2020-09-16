@@ -11,7 +11,7 @@ Production ready Next.js app with the following:
 - [x] polka is an extremely minimal, highly performant Express.js alternative.
 - [x] Sentry error reporting support.
 - [x] Cookie support with [next-cookies](https://github.com/matthewmueller/next-cookies)
-- [x] generate production source maps with [@zeit/next-source-maps](https://github.com/vercel/next-plugins/tree/master/packages/next-source-maps)
+- [x] Source maps with [@zeit/next-source-maps](https://github.com/vercel/next-plugins/tree/master/packages/next-source-maps)
 - [x] GZIP enabled with compression middleware
 ## Getting started
 ```
