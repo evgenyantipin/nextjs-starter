@@ -1,4 +1,3 @@
-
 const withOptimizedImages = require("next-optimized-images");
 const withSourceMaps = require("@zeit/next-source-maps");
 
@@ -21,7 +20,6 @@ module.exports = withConfig(
       },
 
       webpack: (config, { dev, isServer }) => {
-
         if (!isServer) {
           config.resolve.alias["@sentry/node"] = "@sentry/browser";
         }

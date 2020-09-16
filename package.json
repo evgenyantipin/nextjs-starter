@@ -5,7 +5,18 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "node server.js"
+    "start": "node server.js",
+    "pretty": "prettier --write --tab-width 2 \"**/*.js\""
+  },
+  "lint-staged": {
+    "*.js": [
+      "yarn pretty"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "dependencies": {
     "@sentry/browser": "^5.23.0",
@@ -32,7 +43,10 @@
   "devDependencies": {
     "@zeit/next-source-maps": "^0.0.3",
     "babel-plugin-styled-components": "^1.10.0",
-    "redux-logger": "^3.0.6"
+    "redux-logger": "^3.0.6",
+    "husky": "^4.2.5",
+    "lint-staged": "10.2.13",
+    "prettier": "2.1.1"
   },
   "engines": {
     "node": ">=10"
