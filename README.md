@@ -1,7 +1,8 @@
 ### Next.js Starter
 
 Production ready Next.js app with the following:
-- [x] [Demo](https://next-redux-starter.evgenyantipin.vercel.app)
+
+## [Demo](https://next-redux-starter.evgenyantipin.vercel.app)
 - [x] Next.js latest
 - [x] Express.js server
 - [x] [Preact optimization enabled](https://github.com/developit/nextjs-preact-demo) reduces the base JavaScript weight of pages to 21kB
