@@ -11,6 +11,7 @@
     "@sentry/browser": "^5.23.0",
     "@sentry/node": "^5.23.0",
     "babel-plugin-module-resolver": "^4.0.0",
+    "compression": "^1.7.4",
     "cookie-parser": "^1.4.5",
     "dotenv": "^8.2.0",
     "isomorphic-unfetch": "^3.0.0",
