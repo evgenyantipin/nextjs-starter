@@ -6,7 +6,6 @@ Production ready Next.js app with the following:
 - [x] Next.js latest
 - [x] Express.js server
 - [x] [Preact optimization enabled](https://github.com/developit/nextjs-preact-demo) reduces the base JavaScript weight of pages to 21kB
-- [x] React 16.x with hooks
 - [x] State management with [redux](https://github.com/reactjs/redux) and [next-redux-wrapper 6.x](https://github.com/kirill-konshin/next-redux-wrapper)
 - [x] [isomorphic-unfetch](https://github.com/developit/unfetch) Tiny 500b
 - [x] Scoped and Global SCSS support (.module.scss or .module.sass extension.)
