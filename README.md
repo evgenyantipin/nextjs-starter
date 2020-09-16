@@ -14,6 +14,7 @@ Production ready Next.js app with the following:
 - [x] Cookie support with [next-cookies](https://github.com/matthewmueller/next-cookies)
 - [x] Source maps with [@zeit/next-source-maps](https://github.com/vercel/next-plugins/tree/master/packages/next-source-maps)
 - [x] GZIP enabled with compression middleware
+- [x] Prettier task on pre-commit with husky
 ## Getting started
 ```
 git clone git@github.com:evgenyantipin/next-redux-starter.git my-project
