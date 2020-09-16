@@ -1,4 +1,4 @@
-const polka = require("polka");
+const express = require("express");
 const next = require("next");
 const compression = require("compression");
 const cookieParser = require("cookie-parser");
@@ -10,7 +10,7 @@ const app = next({ dev: process.env.NODE_ENV === "development" });
 const handle = app.getRequestHandler();
 
 app.prepare().then(() => {
-  const server = polka();
+  const server = express();
   server.use(cookieParser());
   server.use(compression());
 
