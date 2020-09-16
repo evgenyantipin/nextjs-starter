@@ -1,0 +1,25 @@
+.post {
+  padding: 3rem;
+  max-width: 750px;
+  margin: 0 auto;
+  @media (max-width: 750px) {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+.post > h1 {
+  color: #222;
+  font-weight: bold;
+  font-size: 1.75rem;
+  line-height: 35px;
+  font-family: "PT Sans", sans-serif;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.post > p {
+  line-height: 28px;
+  color: #666;
+  font-family: "PT Sans", sans-serif;
+}

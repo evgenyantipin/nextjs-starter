@@ -1,10 +1,9 @@
 import Head from "next/head";
-import Wrapper from "./Wrapper";
 import Nav from "components/Nav";
-import Footer from "components/Footer";
+import styles from "./Main.module.scss";
 
-export default ({ children, title = "default title" }) => (
-  <Wrapper>
+const MainLayout = ({ children, title = "default title" }) => (
+  <div className={styles.layout}>
     <Head>
       <title>{title}</title>
     </Head>
@@ -14,6 +13,8 @@ export default ({ children, title = "default title" }) => (
 
     <main>{children}</main>
 
-    <Footer>Footer</Footer>
-  </Wrapper>
+    <div className={styles.footer}>Footer</div>
+  </div>
 );
+
+export default MainLayout;

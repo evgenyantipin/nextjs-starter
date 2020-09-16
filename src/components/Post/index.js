@@ -1,15 +1,15 @@
 import Link from "next/link";
-import Wrapper from "./Wrapper";
+import styles from "./Post.module.scss";
 
 const PostItem = ({ post }) => (
-  <Wrapper>
+  <div className={styles.post}>
     <Link href={`/post/[id]?id=${post.title}`} as={`/post/${post.title}`}>
       <a>
         <h3>{post.title}</h3>
         <p>{post.body}</p>
       </a>
     </Link>
-  </Wrapper>
+  </div>
 );
 
 export default PostItem;
