@@ -1,5 +1,7 @@
 ### 🚀Super fast Next.js starter app with the following:
 
+![Screenshot](pagespeed-insights.png)
+
 ## [You can see a live demo](https://next-redux-starter.evgenyantipin.vercel.app)
 - [x] Next.js 9.X + Preact = 21kB
 - [x] Express.js server
