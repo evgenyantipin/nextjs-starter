@@ -9,7 +9,7 @@ Production ready Next.js app with the following:
 - [x] React 16.x with hooks
 - [x] State management with [redux](https://github.com/reactjs/redux) and [next-redux-wrapper 6.x](https://github.com/kirill-konshin/next-redux-wrapper)
 - [x] [isomorphic-unfetch](https://github.com/developit/unfetch) Tiny 500b
-- [x] Sass support (.module.scss or .module.sass extension.)
+- [x] Scoped and Global SCSS support (.module.scss or .module.sass extension.)
 - [x] [next-optimized-images](https://github.com/cyrilwanner/next-optimized-images)
 - [x] Sentry error reporting support.
 - [x] Cookie support with [next-cookies](https://github.com/matthewmueller/next-cookies)
