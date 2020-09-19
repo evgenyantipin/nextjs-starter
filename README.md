@@ -1,4 +1,4 @@
-### 🚀Super fast Next.js starter app with the following:
+### 🚀Blazing fast Next.js starter app with the following:
 
 ![Screenshot](pagespeed-insights.png)
 
