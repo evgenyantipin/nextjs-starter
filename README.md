@@ -2,7 +2,7 @@
 
 ![Screenshot](pagespeed-insights.png)
 
-## [You can see a live demo](https://next-redux-starter.evgenyantipin.vercel.app)
+## [You can see a live demo](https://nextjs-starter-gamma.vercel.app/)
 - [x] Next.js 9.X + Preact = 21kB
 - [x] Express.js server
 - [x] [Preact optimization enabled](https://github.com/developit/nextjs-preact-demo) reduces the base JavaScript weight of pages to 21kB
