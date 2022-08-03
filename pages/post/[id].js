@@ -1,6 +1,15 @@
 import Layout from "layouts/Main";
-import { getPost } from "store/actions/posts";
+import { getPost } from "api/posts";
 import styles from "./Post.module.scss";
+
+export async function getServerSideProps({ params }) {
+  const post = await getPost(params?.id);
+  return {
+    props: {
+      post: post[0],
+    },
+  };
+}
 
 const PostPage = ({ post }) => (
   <Layout>
@@ -10,11 +19,5 @@ const PostPage = ({ post }) => (
     </div>
   </Layout>
 );
-
-PostPage.getInitialProps = async (ctx) => {
-  const slug = ctx.query.id;
-  const { post } = await ctx.store.dispatch(getPost(slug));
-  return { post };
-};
 
 export default PostPage;

@@ -1,0 +1,14 @@
+.item {
+  max-width: 843px;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  padding: 24px 32px;
+  border-bottom: 1px solid #eaeeee;
+  background-color: #fff;
+  -webkit-transition: background-color .15s;
+  -o-transition: background-color .15s;
+  transition: background-color .15s;
+}

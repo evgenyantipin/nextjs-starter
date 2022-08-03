@@ -1,6 +1,15 @@
 import Layout from "layouts/Main";
-import { getPosts } from "store/actions/posts";
+import { getPosts } from "api/posts";
 import Post from "components/Post";
+
+export async function getServerSideProps(ctx) {
+  const posts = await getPosts();
+  return {
+    props: {
+      posts,
+    },
+  };
+}
 
 const IndexPage = ({ posts }) => (
   <Layout>
@@ -11,10 +20,5 @@ const IndexPage = ({ posts }) => (
     </ul>
   </Layout>
 );
-
-IndexPage.getInitialProps = async (ctx) => {
-  const { posts } = await ctx.store.dispatch(getPosts());
-  return { posts };
-};
 
 export default IndexPage;
