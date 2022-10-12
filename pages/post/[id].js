@@ -1,5 +1,5 @@
-import Layout from "layouts/Main";
-import { getPost } from "api/posts";
+import Layout from "../../src/layouts/Main";
+import { getPost } from "../../src/api/posts";
 import styles from "./Post.module.scss";
 
 export async function getServerSideProps({ params }) {

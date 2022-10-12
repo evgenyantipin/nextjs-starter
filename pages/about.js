@@ -1,3 +1,5 @@
-import Layout from "layouts/Main";
+import Layout from "../src/layouts/Main";
 
-export default () => <Layout>About Page</Layout>;
+const Contacts = () => <Layout>About Page</Layout>;
+
+export default Contacts;

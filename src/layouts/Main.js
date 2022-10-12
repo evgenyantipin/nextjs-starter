@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Nav from "components/Nav";
+import Nav from "../../src/components/Nav";
 import styles from "./Main.module.scss";
 
 const MainLayout = ({ children, title = "default title" }) => (

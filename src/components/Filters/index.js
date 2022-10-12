@@ -1,5 +1,3 @@
-import Link from "next/link";
-import nextLogo from "assets/nextjs.svg";
 import styles from "./Nav.module.scss";
 
 const Nav = () => (

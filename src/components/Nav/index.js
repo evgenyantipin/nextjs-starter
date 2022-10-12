@@ -1,12 +1,13 @@
+import Image from "next/image";
 import Link from "next/link";
-import nextLogo from "assets/nextjs.svg";
+import nextLogo from "../../../src/assets/nextjs.svg";
 import styles from "./Nav.module.scss";
 
 const Nav = () => (
   <div className={styles.nav}>
     <Link href="/">
       <a>
-        <img src={nextLogo} alt="nextjs" />
+        <Image src={nextLogo} alt="nextjs" width="100" height="40" />
       </a>
     </Link>
     |

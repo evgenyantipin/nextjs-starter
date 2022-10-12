@@ -1,6 +1,6 @@
-import Layout from "layouts/Main";
-import { getPosts } from "api/posts";
-import Post from "components/Post";
+import Layout from "../src/layouts/Main";
+import { getPosts } from "../src/api/posts";
+import Post from "../src/components/Post";
 
 export async function getServerSideProps(ctx) {
   const posts = await getPosts();
