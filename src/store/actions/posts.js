@@ -1,9 +1,9 @@
 import fetch from "isomorphic-unfetch";
 
 export const getPosts = () => async (dispatch) => {
-  const posts = await fetch(
-    "https://jsonplaceholder.typicode.com/posts"
-  ).then((r) => r.json());
+  const posts = await fetch("https://jsonplaceholder.typicode.com/posts").then(
+    (r) => r.json()
+  );
   return dispatch({ type: "GET_POSTS", posts: posts });
 };
 
