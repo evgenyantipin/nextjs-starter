@@ -10,7 +10,6 @@
 - [x] [isomorphic-unfetch](https://github.com/developit/unfetch) Tiny 500b
 - [x] Scoped and Global SCSS support (.module.scss or .module.sass extension.)
 - [x] Sentry error reporting support.
-- [x] Cookie support with [next-cookies](https://github.com/matthewmueller/next-cookies)
 - [x] GZIP enabled with compression middleware
 - [x] Prettier task on pre-commit with husky
 ## Getting started
