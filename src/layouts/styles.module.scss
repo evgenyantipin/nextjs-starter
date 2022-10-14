@@ -1,0 +1,12 @@
+.layout {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  max-width: 42rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.layout > main {
+  flex: 1;
+}

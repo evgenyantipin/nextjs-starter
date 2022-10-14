@@ -2,21 +2,21 @@ import thunkMiddleware from 'redux-thunk';
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import { createLogger } from 'redux-logger';
 import postsReducer from './reducers/posts';
+import counterReducer from './reducers/counter';
 
 const loggerMiddleware = createLogger({
   collapsed: false
 });
 
 const rootReducer = combineReducers({
-  posts: postsReducer
+  posts: postsReducer,
+  counter: counterReducer
 });
 
 export const store = configureStore({
   reducer: rootReducer,
   middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware({
-      serializableCheck: false
-    }).concat(loggerMiddleware, thunkMiddleware)
+    getDefaultMiddleware().concat(loggerMiddleware, thunkMiddleware)
 });
 
 // Infer the `RootState` and `AppDispatch` types from the store itself
