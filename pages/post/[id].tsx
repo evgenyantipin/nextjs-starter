@@ -1,18 +1,25 @@
-import React from "react";
-import Layout from "../../src/layouts/Main";
-import { getPost } from "../../src/api/posts";
-import styles from "./Post.module.scss";
+import React from 'react';
+import type { GetServerSideProps, NextPage } from 'next';
+import Layout from 'layouts/Main';
+import { getPost } from 'api/posts';
+import styles from './Post.module.scss';
+import type { IPost } from 'types/IPost';
 
-export async function getServerSideProps({ params }) {
-  const post = await getPost(params?.id);
-  return {
-    props: {
-      post: post[0],
-    },
-  };
+interface PageProps {
+  post: IPost;
 }
 
-const PostPage = ({ post }) => (
+export const getServerSideProps: GetServerSideProps = async ({ params }) => {
+  const post = await getPost(params?.id as string);
+
+  return {
+    props: {
+      post: post[0]
+    }
+  };
+};
+
+const PostPage: NextPage<PageProps> = ({ post }) => (
   <Layout>
     <div className={styles.post}>
       <h1>{post.title}</h1>

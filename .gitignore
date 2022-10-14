@@ -2,3 +2,5 @@
 .next/
 
 .vercel
+package-lock.json
+yarn.lock

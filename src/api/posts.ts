@@ -7,7 +7,7 @@ export const getPosts = () => {
   return posts;
 };
 
-export const getPost = (slug) => {
+export const getPost = (slug: string) => {
   const post = fetch(
     `https://jsonplaceholder.typicode.com/posts?title=${slug}`
   ).then((r) => r.json());

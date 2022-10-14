@@ -1,27 +1,24 @@
 import React from 'react';
-import Layout from '../src/layouts/Main';
-import { getPosts } from '../src/api/posts';
-import Post from '../src/components/Post';
+import type { GetServerSideProps, NextPage } from 'next';
+import Layout from 'layouts/Main';
+import { getPosts } from 'api/posts';
+import Post from 'components/Post';
+import type { IPost } from 'types/IPost';
 
-export async function getServerSideProps(ctx) {
+interface PageProps {
+  posts: IPost[];
+}
+
+export const getServerSideProps: GetServerSideProps = async () => {
   const posts = await getPosts();
   return {
     props: {
       posts
     }
   };
-}
+};
 
-interface Post {
-  title: string;
-  body: string;
-}
-
-interface PageProps {
-  posts: Post[];
-}
-
-const IndexPage: React.FC<PageProps> = ({ posts }) => (
+const IndexPage: NextPage<PageProps> = ({ posts }) => (
   <Layout>
     <ul>
       {posts.map((p) => (

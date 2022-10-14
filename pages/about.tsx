@@ -1,6 +1,7 @@
 import React from 'react';
-import Layout from '../src/layouts/Main';
+import type { NextPage } from 'next';
+import Layout from 'layouts/Main';
 
-const Contacts: React.FC = () => <Layout>About Page</Layout>;
+const Contacts: NextPage = () => <Layout>About Page</Layout>;
 
 export default Contacts;
