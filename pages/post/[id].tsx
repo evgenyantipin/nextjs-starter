@@ -1,3 +1,4 @@
+import React from "react";
 import Layout from "../../src/layouts/Main";
 import { getPost } from "../../src/api/posts";
 import styles from "./Post.module.scss";

@@ -1,9 +1,10 @@
-import Image from "next/image";
-import Link from "next/link";
-import nextLogo from "../../../src/assets/nextjs.svg";
-import styles from "./Nav.module.scss";
+import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import nextLogo from 'assets/nextjs.svg';
+import styles from './Nav.module.scss';
 
-const Nav = () => (
+const Nav: React.FC = () => (
   <div className={styles.nav}>
     <Link href="/">
       <a>
@@ -13,7 +14,7 @@ const Nav = () => (
     |
     <Link href="/about">
       <a>About</a>
-    </Link>{" "}
+    </Link>{' '}
     |
     <Link href="/contact">
       <a>Contact</a>

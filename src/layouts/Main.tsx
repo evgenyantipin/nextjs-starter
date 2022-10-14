@@ -1,8 +1,9 @@
-import Head from "next/head";
-import Nav from "../../src/components/Nav";
-import styles from "./Main.module.scss";
+import React from 'react';
+import Head from 'next/head';
+import Nav from 'components/Nav';
+import styles from './Main.module.scss';
 
-const MainLayout = ({ children, title = "default title" }) => (
+const MainLayout = ({ children, title = 'default title' }) => (
   <div className={styles.layout}>
     <Head>
       <title>{title}</title>
