@@ -2,7 +2,7 @@ import React from 'react';
 import type { NextPage } from 'next';
 import { useSelector, useDispatch } from 'react-redux';
 import Layout from 'layouts/Main';
-import { decrement, increment } from 'store/reducers/counter';
+import { decrement, increment } from 'store/modules/counter';
 import type { RootState } from 'store';
 
 const CounterPage: NextPage = () => {

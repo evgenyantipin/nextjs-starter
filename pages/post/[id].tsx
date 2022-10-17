@@ -11,7 +11,6 @@ interface PageProps {
 
 export const getServerSideProps: GetServerSideProps = async ({ params }) => {
   const post = await getPost(params?.id as string);
-
   return {
     props: {
       post: post[0]

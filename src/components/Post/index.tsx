@@ -1,17 +1,13 @@
 import React from 'react';
 import Link from 'next/link';
 import styles from './Post.module.scss';
-
-interface Post {
-  title: string;
-  body: string;
-}
+import type { IPost } from 'types/IPost';
 
 interface PageProps {
-  post: Post;
+  post: IPost;
 }
 
-const PostItem: React.FC<PageProps> = ({ post }) => (
+const Post: React.FC<PageProps> = ({ post }) => (
   <div className={styles.post}>
     <Link href={`/post/[id]?id=${post.title}`} as={`/post/${post.title}`}>
       <a>
@@ -22,4 +18,4 @@ const PostItem: React.FC<PageProps> = ({ post }) => (
   </div>
 );
 
-export default PostItem;
+export default Post;

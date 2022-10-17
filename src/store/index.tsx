@@ -1,15 +1,13 @@
 import thunkMiddleware from 'redux-thunk';
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import { createLogger } from 'redux-logger';
-import postsReducer from './reducers/posts';
-import counterReducer from './reducers/counter';
+import counterReducer from './modules/counter';
 
 const loggerMiddleware = createLogger({
   collapsed: false
 });
 
 const rootReducer = combineReducers({
-  posts: postsReducer,
   counter: counterReducer
 });
 
