@@ -4,7 +4,7 @@
 
 ## [You can see a live demo](https://nextjs-starter-evgenyantipin.vercel.app/)
 - [x] Next.js 15.0.1 + Preact = 21kB
-- [x] Express.js server
+- [x] Fastify server
 - [x] [Preact optimization enabled](https://github.com/developit/nextjs-preact-demo) reduces the base JavaScript weight of pages to 21kB
 - [x] State management with [redux](https://github.com/reactjs/redux)
 - [x] [wretch](https://github.com/elbywan/wretch) A tiny wrapper built around fetch with an intuitive syntax
