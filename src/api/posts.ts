@@ -1,4 +1,3 @@
-// import fetch from "isomorphic-unfetch";
 import wretch from 'wretch';
 
 export const getPosts = () =>

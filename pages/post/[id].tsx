@@ -1,16 +1,14 @@
-import React from 'react';
-import type { GetServerSideProps, NextPage } from 'next';
 import Layout from 'layouts/Main';
 import { getPost } from 'api/posts';
 import styles from './Post.module.scss';
-import type { IPost } from 'types/IPost';
+import { IPost } from 'types/IPost';
 
-interface PageProps {
+type PageProps = {
   post: IPost;
-}
+};
 
-export const getServerSideProps: GetServerSideProps = async ({ params }) => {
-  const post = await getPost(params?.id as string);
+export const getServerSideProps = async ({ params }: any) => {
+  const post: any = await getPost(params?.id as string);
   return {
     props: {
       post: post[0]
@@ -18,7 +16,7 @@ export const getServerSideProps: GetServerSideProps = async ({ params }) => {
   };
 };
 
-const PostPage: NextPage<PageProps> = ({ post }) => (
+const PostPage = ({ post }: PageProps) => (
   <Layout>
     <div className={styles.post}>
       <h1>{post.title}</h1>
