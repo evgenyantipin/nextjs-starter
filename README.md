@@ -7,7 +7,7 @@
 - [x] Express.js server
 - [x] [Preact optimization enabled](https://github.com/developit/nextjs-preact-demo) reduces the base JavaScript weight of pages to 21kB
 - [x] State management with [redux](https://github.com/reactjs/redux)
-- [x] [isomorphic-unfetch](https://github.com/developit/unfetch) Tiny 500b
+- [x] [wretch](https://github.com/elbywan/wretch) A tiny wrapper built around fetch with an intuitive syntax
 - [x] Scoped and Global SCSS support (.module.scss or .module.sass extension.)
 - [x] Sentry error reporting support.
 - [x] GZIP enabled with compression middleware

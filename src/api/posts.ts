@@ -1,15 +1,10 @@
-import fetch from "isomorphic-unfetch";
+// import fetch from "isomorphic-unfetch";
+import wretch from 'wretch';
 
-export const getPosts = () => {
-  const posts = fetch("https://jsonplaceholder.typicode.com/posts").then((r) =>
-    r.json()
-  );
-  return posts;
-};
+export const getPosts = () =>
+  wretch('https://jsonplaceholder.typicode.com/posts').get().json();
 
-export const getPost = (slug: string) => {
-  const post = fetch(
-    `https://jsonplaceholder.typicode.com/posts?title=${slug}`
-  ).then((r) => r.json());
-  return post;
-};
+export const getPost = (slug: string) =>
+  wretch(`https://jsonplaceholder.typicode.com/posts?title=${slug}`)
+    .get()
+    .json();
