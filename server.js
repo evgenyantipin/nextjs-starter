@@ -1,12 +1,12 @@
-const express = require("express");
-const next = require("next");
-const compression = require("compression");
-const cookieParser = require("cookie-parser");
+const express = require('express');
+const next = require('next');
+const compression = require('compression');
+const cookieParser = require('cookie-parser');
 
-process.env.NODE_ENV = process.env.NODE_ENV || "production";
+process.env.NODE_ENV = process.env.NODE_ENV || 'production';
 process.env.PORT = process.env.PORT || 3003;
 
-const app = next({ dev: process.env.NODE_ENV === "development" });
+const app = next({ dev: process.env.NODE_ENV === 'development' });
 const handle = app.getRequestHandler();
 
 app.prepare().then(() => {
@@ -14,7 +14,7 @@ app.prepare().then(() => {
   server.use(cookieParser());
   server.use(compression());
 
-  server.get("*", (req, res) => {
+  server.get('*', (req, res) => {
     return handle(req, res);
   });
 

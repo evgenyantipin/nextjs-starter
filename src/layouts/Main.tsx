@@ -1,18 +1,15 @@
-import React from 'react';
+import { ReactNode } from 'react';
 import Head from 'next/head';
 import Nav from 'components/Nav';
-import s from './styles.module.scss';
+import styles from './styles.module.scss';
 
-interface IProps {
-  children: React.ReactNode;
+type MainLayoutProps = {
+  children: ReactNode;
   title?: string;
-}
+};
 
-const MainLayout: React.FC<IProps> = ({
-  children,
-  title = 'default title'
-}) => (
-  <div className={s.layout}>
+const MainLayout = ({ children, title = 'default title' }: MainLayoutProps) => (
+  <div className={styles.layout}>
     <Head>
       <title>{title}</title>
     </Head>

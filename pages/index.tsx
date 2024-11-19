@@ -5,12 +5,13 @@ import { getPosts } from 'api/posts';
 import Post from 'components/Post';
 import type { IPost } from 'types/IPost';
 
-interface PageProps {
+type PageProps = {
   posts: IPost[];
-}
+};
 
 export const getServerSideProps: GetServerSideProps = async () => {
   const posts = await getPosts();
+
   return {
     props: {
       posts
@@ -18,14 +19,18 @@ export const getServerSideProps: GetServerSideProps = async () => {
   };
 };
 
-const IndexPage: NextPage<PageProps> = ({ posts }) => (
-  <Layout>
-    <ul>
-      {posts.map((p) => (
-        <Post key={p.title} post={p} />
-      ))}
-    </ul>
-  </Layout>
-);
+const IndexPage = (props: PageProps) => {
+  const { posts } = props;
+
+  return (
+    <Layout>
+      <ul>
+        {posts.map((p) => (
+          <Post key={p.title} post={p} />
+        ))}
+      </ul>
+    </Layout>
+  );
+};
 
 export default IndexPage;

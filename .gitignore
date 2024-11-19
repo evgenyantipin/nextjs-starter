@@ -5,3 +5,25 @@
 package-lock.json
 yarn.lock
 yarn-error.log
+
+# misc
+dump.rdb
+.DS_Store
+*.pem
+.vscode
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# local env files
+.env*.local
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
