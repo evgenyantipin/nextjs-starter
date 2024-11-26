@@ -1,4 +1,5 @@
 import React, { useCallback, useEffect, useRef } from 'react';
+import Image from 'next/image';
 import {
   EmblaCarouselType,
   EmblaEventType,
@@ -108,10 +109,12 @@ const EmblaCarousel = (props: PropType) => {
             <div className="embla__slide" key={index}>
               <div className="embla__parallax">
                 <div className="embla__parallax__layer">
-                  <img
-                    className="embla__slide__img embla__parallax__img"
+                  <Image
                     src="https://static.vecteezy.com/system/resources/previews/029/469/518/non_2x/ai-generated-ai-generative-beautiful-nature-outdoor-water-river-lake-underwater-landscape-background-adventure-explore-vibe-graphic-art-photo.jpg"
-                    alt="Your alt text"
+                    width={500}
+                    height={500}
+                    alt="Picture of the author"
+                    className="embla__slide__img embla__parallax__img"
                   />
                 </div>
               </div>
