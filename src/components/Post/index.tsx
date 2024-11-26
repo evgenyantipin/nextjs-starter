@@ -1,6 +1,6 @@
-import React from 'react';
 import Link from 'next/link';
-import styles from './Post.module.scss';
+import Carousel from 'components/Carousel';
+import styles from './Post.module.css';
 import type { IPost } from 'types/IPost';
 
 type PageProps = {

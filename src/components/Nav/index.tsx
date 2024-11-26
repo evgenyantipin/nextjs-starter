@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import nextLogo from 'assets/nextjs.svg';
-import styles from './styles.module.scss';
+import styles from './styles.module.css';
 
 const Nav = () => (
   <div className={styles.nav}>

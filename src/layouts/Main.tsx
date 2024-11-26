@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 import Head from 'next/head';
 import Nav from 'components/Nav';
-import styles from './styles.module.scss';
+import styles from './styles.module.css';
 
 type MainLayoutProps = {
   children: ReactNode;

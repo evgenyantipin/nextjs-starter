@@ -1,0 +1,35 @@
+.post {
+  border-bottom: 1px solid #ddd;
+}
+
+.post > h3 {
+  color: #222;
+  font-weight: bold;
+  font-size: 1.75rem;
+  line-height: 35px;
+  font-family: 'PT Sans', sans-serif;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.post > p {
+  font-size: 1.2rem;
+  line-height: 35px;
+  color: #444;
+  font-family: 'PT Serif', sans-serif;
+  margin: 0;
+}
+
+.post > a {
+  padding: 15px;
+  text-decoration: none;
+  display: block;
+}
+
+.post > a:hover {
+  background: #f5f5f5;
+}
+
+.post > a:hover h3 {
+  color: #387ef5;
+}

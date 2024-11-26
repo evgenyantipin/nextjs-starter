@@ -38,71 +38,6 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@cfcs/core@^0.0.24":
-  version "0.0.24"
-  resolved "https://registry.yarnpkg.com/@cfcs/core/-/core-0.0.24.tgz#2ab40d1fe5cf64f50acc31983a5b589521268dde"
-  integrity sha512-feB38qu+eDk0Pggh/yR7gjaNmvUYA2uCxHP3Pz2MLE4LZ/9jPdtu8bzCSI47yTEhWyZCF5Pk698hdz8IN2mTjA==
-  dependencies:
-    "@egjs/component" "^3.0.4"
-
-"@cfcs/core@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@cfcs/core/-/core-0.1.0.tgz#64346f7634b46de6e9b1d4c195743b9b8e603162"
-  integrity sha512-kvYX0RpL45XTHJ5sW7teNbKeAa7pK3nNqaJPoFfZDPTIBJOkTtRD3QhkBG+O3Hu69a8xeMoPvF6y/RtJ6JUOdA==
-  dependencies:
-    "@egjs/component" "^3.0.4"
-
-"@egjs/agent@^2.2.1":
-  version "2.4.4"
-  resolved "https://registry.yarnpkg.com/@egjs/agent/-/agent-2.4.4.tgz#bd2ef4a17427d425332b01f3e79953cd413b532d"
-  integrity sha512-cvAPSlUILhBBOakn2krdPnOGv5hAZq92f1YHxYcfu0p7uarix2C6Ia3AVizpS1SGRZGiEkIS5E+IVTLg1I2Iog==
-
-"@egjs/axes@^3.9.1":
-  version "3.9.1"
-  resolved "https://registry.yarnpkg.com/@egjs/axes/-/axes-3.9.1.tgz#d7fef01768b2d23c3163dc601f062f7d4feeeecd"
-  integrity sha512-vaqUe/boRDk/A4TjiPtMv+lf7c4Q2jTER/Hw4I61NiJUyPftlZjaP4cteBCQejFyZmzimmA2W0cLmYZHTjBY8A==
-  dependencies:
-    "@cfcs/core" "^0.1.0"
-    "@egjs/agent" "^2.2.1"
-    "@egjs/component" "^3.0.1"
-
-"@egjs/component@^3.0.1", "@egjs/component@^3.0.2", "@egjs/component@^3.0.4":
-  version "3.0.5"
-  resolved "https://registry.yarnpkg.com/@egjs/component/-/component-3.0.5.tgz#2dc86e835d5dc5055cdf46c7cd794eb45330e1b6"
-  integrity sha512-cLcGizTrrUNA2EYE3MBmEDt2tQv1joVP1Q3oDisZ5nw0MZDx2kcgEXM+/kZpfa/PAkFvYVhRUZwytIQWoN3V/w==
-
-"@egjs/flicking@^4.11.4", "@egjs/flicking@~4.11.4":
-  version "4.11.4"
-  resolved "https://registry.yarnpkg.com/@egjs/flicking/-/flicking-4.11.4.tgz#295871a6f17ab6468d978ad20f4ab1b98487e668"
-  integrity sha512-ZQxJS0C9lZ/PcMfM7vo9KQW4tvmi+e+9HIxRstRCo2DGy0nJ6LklZt0b+POf6O9Ak0qZwDeHCGp6AhrDu9EPNA==
-  dependencies:
-    "@egjs/axes" "^3.9.1"
-    "@egjs/component" "^3.0.1"
-    "@egjs/imready" "^1.3.1"
-    "@egjs/list-differ" "^1.0.1"
-
-"@egjs/imready@^1.3.1":
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/@egjs/imready/-/imready-1.4.1.tgz#4d72f67b5e8212f0ef449dd2b5b79f975110352b"
-  integrity sha512-JIOBs4lB7FYdsKi5uvz2j3SObX8eShtZjtqlOH41tm185aJOQZwiKBK8+V4MxzG4X6DqVhpdN8UcuVwBbElfsg==
-  dependencies:
-    "@cfcs/core" "^0.0.24"
-    "@egjs/component" "^3.0.1"
-
-"@egjs/list-differ@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@egjs/list-differ/-/list-differ-1.0.1.tgz#5772b0f8b87973bb67827f6c7d7df8d7f64a22eb"
-  integrity sha512-OTFTDQcWS+1ZREOdCWuk5hCBgYO4OsD30lXcOCyVOAjXMhgL5rBRDnt/otb6Nz8CzU0L/igdcaQBDLWc4t9gvg==
-
-"@egjs/react-flicking@^4.11.4":
-  version "4.11.4"
-  resolved "https://registry.yarnpkg.com/@egjs/react-flicking/-/react-flicking-4.11.4.tgz#21dd6cebebf963b918692f877409e4466a8e3593"
-  integrity sha512-ljwWndz9GxsepFrG5hAt55zTwLNG/GUUnfAcPiwKDYTxeXSamPUGAFPlvwsxBz7lNBRKPR8CseCTG9mzSZ1+sQ==
-  dependencies:
-    "@egjs/component" "^3.0.2"
-    "@egjs/flicking" "~4.11.4"
-    "@egjs/list-differ" "^1.0.1"
-
 "@emnapi/runtime@^1.2.0":
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/@emnapi/runtime/-/runtime-1.3.1.tgz#0fcaa575afc31f455fd33534c19381cfce6c6f60"
@@ -1061,6 +996,24 @@ electron-to-chromium@^1.4.251:
   version "1.4.282"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.282.tgz#02af3fd6051e97ac3388a4b11d455bc1ca49838f"
   integrity sha512-Dki0WhHNh/br/Xi1vAkueU5mtIc9XLHcMKB6tNfQKk+kPG0TEUjRh5QEMAUbRp30/rYNMFD1zKKvbVzwq/4wmg==
+
+embla-carousel-react@^8.5.1:
+  version "8.5.1"
+  resolved "https://registry.yarnpkg.com/embla-carousel-react/-/embla-carousel-react-8.5.1.tgz#e06ff28cb53698d453ffad89423c23d725e9b010"
+  integrity sha512-z9Y0K84BJvhChXgqn2CFYbfEi6AwEr+FFVVKm/MqbTQ2zIzO1VQri6w67LcfpVF0AjbhwVMywDZqY4alYkjW5w==
+  dependencies:
+    embla-carousel "8.5.1"
+    embla-carousel-reactive-utils "8.5.1"
+
+embla-carousel-reactive-utils@8.5.1:
+  version "8.5.1"
+  resolved "https://registry.yarnpkg.com/embla-carousel-reactive-utils/-/embla-carousel-reactive-utils-8.5.1.tgz#3059ab2f72f04988a96694f700a772a72bb75ffb"
+  integrity sha512-n7VSoGIiiDIc4MfXF3ZRTO59KDp820QDuyBDGlt5/65+lumPHxX2JLz0EZ23hZ4eg4vZGUXwMkYv02fw2JVo/A==
+
+embla-carousel@8.5.1, embla-carousel@^8.5.1:
+  version "8.5.1"
+  resolved "https://registry.yarnpkg.com/embla-carousel/-/embla-carousel-8.5.1.tgz#8d83217e831666f6df573b0d3727ff0ae9208002"
+  integrity sha512-JUb5+FOHobSiWQ2EJNaueCNT/cQU9L6XWBbWmorWPQT9bkbk+fhsuLr8wWrzXKagO3oWszBO7MSx+GfaRk4E6A==
 
 emoji-regex@^8.0.0:
   version "8.0.0"

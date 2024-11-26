@@ -1,6 +1,7 @@
 import Layout from 'layouts/Main';
+import Carousel from 'components/Carousel';
 import { getPost } from 'api/posts';
-import styles from './Post.module.scss';
+import styles from './Post.module.css';
 import { IPost } from 'types/IPost';
 
 type PageProps = {
@@ -20,6 +21,7 @@ const PostPage = ({ post }: PageProps) => (
   <Layout>
     <div className={styles.post}>
       <h1>{post.title}</h1>
+      <Carousel />
       <p>{post.body}</p>
     </div>
   </Layout>

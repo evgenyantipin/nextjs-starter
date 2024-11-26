@@ -22,6 +22,8 @@
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
     "dotenv": "^8.2.0",
+    "embla-carousel": "^8.5.1",
+    "embla-carousel-react": "^8.5.1",
     "fastify-next": "^0.3.3",
     "next": "15.0.1",
     "next-plugin-preact": "^3.0.7",
