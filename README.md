@@ -2,7 +2,7 @@
 
 ![Screenshot](pagespeed-insights.png)
 
-## [You can see a live demo](https://nextjs-starter-evgenyantipin.vercel.app/)
+## [You can see a live demo](https://nextjs-starter-gamma.vercel.app/)
 - [x] Next.js 15.0.1 + Preact = 21kB
 - [x] Fastify server
 - [x] [Preact optimization enabled](https://github.com/developit/nextjs-preact-demo) reduces the base JavaScript weight of pages to 21kB
