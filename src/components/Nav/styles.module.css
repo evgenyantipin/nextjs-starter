@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
   background: palegreen;
+  border-radius: 15px;
 }
 
 .nav img {
