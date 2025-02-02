@@ -3,7 +3,7 @@
   "description": "Production ready boilerplate for Next.js",
   "license": "MIT",
   "scripts": {
-    "dev": "next",
+    "dev": "node server.js",
     "build": "next build",
     "start": "node server.js",
     "pretty": "prettier --write --tab-width 2 \"**/*.js\"",
@@ -20,11 +20,12 @@
     }
   },
   "dependencies": {
+    "@fastify/static": "^7.0.4",
     "@reduxjs/toolkit": "^1.9.5",
     "dotenv": "^8.2.0",
     "embla-carousel": "^8.5.1",
     "embla-carousel-react": "^8.5.1",
-    "fastify-next": "^0.3.3",
+    "fastify": "^4.28.1",
     "next": "15.1.6",
     "next-plugin-preact": "^3.0.7",
     "next-runtime-dotenv": "^1.3.0",

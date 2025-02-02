@@ -1,20 +1,46 @@
-import Fastify from 'fastify';
-import fastifyNext from 'fastify-next';
+const fastify = require('fastify')();
+const fastifyStatic = require('@fastify/static');
+const path = require('path');
+const next = require('next');
 
-process.env.NODE_ENV = process.env.NODE_ENV || 'production';
-process.env.PORT = process.env.PORT || 3003;
+const dev = process.env.NODE_ENV !== 'production';
+const host = process.env.HOST || 'localhost';
+const port = parseInt(process.env.PORT || '3000');
 
-async function init() {
-  const fastify = Fastify({
-    logger: process.env.NODE_ENV === 'development',
-    disableRequestLogging: process.env.NODE_ENV === 'production'
-  });
-  await fastify.register(fastifyNext);
-  fastify.next('*');
-  await fastify.listen({ port: process.env.PORT, host: '127.0.0.1' });
-}
+const app = next({ dev });
+const handle = app.getRequestHandler();
 
-init().catch((error) => {
-  console.error(error);
-  process.exit(1);
-});
+(async () => {
+  try {
+    await app.prepare();
+
+    fastify.register(fastifyStatic, {
+      root: path.join(__dirname, '/public/static'),
+      prefix: '/static/'
+    });
+
+    fastify.get('/sitemap.xml', (req, reply) => {
+      reply.sendFile('sitemap.xml');
+    });
+
+    fastify.all('/*', (req, reply) => {
+      reply.hijack();
+      handle(req.raw, reply.raw)
+        .then(() => {
+          reply.raw.end();
+        })
+        .catch((err) => {
+          fastify.log.error(err);
+          reply.raw.writeHead(500);
+          reply.raw.end('Internal Server Error');
+        });
+    });
+
+    await fastify.listen({ port, host });
+
+    console.log(`Fastify server ready on port: ${port}`);
+  } catch (err) {
+    console.log(err);
+    process.exit(1);
+  }
+})();
