@@ -7,7 +7,7 @@ This reduces the base JavaScript weight of pages to ~22kB.
 ![Screenshot](pagespeed-insights.png)
 
 ## [You can see a live demo](https://nextjs-starter-gamma.vercel.app/)
-- [x] Next.js >= 15.1.6 + Preact >= 10.25.1 = 21kB
+- [x] Next.js >= 15.2.4 + Preact >= 10.26.4 = 21kB
 - [x] Fastify server dev/prod
 - [x] [Preact optimization enabled](https://github.com/developit/nextjs-preact-demo) reduces the base JavaScript weight of pages to 21kB
 - [x] State management with [redux](https://github.com/reactjs/redux)
