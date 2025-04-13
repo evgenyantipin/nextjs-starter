@@ -1,13 +1,13 @@
-This is a fully working example of Next.js >= 15 running on Preact instead of React.
+This is a fully working example of Next.js >= 15.3 running on Preact instead of React.
 
 This reduces the base JavaScript weight of pages to ~22kB.
 
 ### 🚀Blazing fast Next.js starter app with the following:
 
 ![Screenshot](pagespeed-insights.png)
-
+## Works up to Next.js 15.3 ✅
 ## [You can see a live demo](https://nextjs-starter-gamma.vercel.app/)
-- [x] Next.js >= 15.2.4 + Preact >= 10.26.4 = 21kB
+- [x] Next.js + Preact >= 10.26.5 = 21kB
 - [x] Fastify server dev/prod
 - [x] [Preact optimization enabled](https://github.com/developit/nextjs-preact-demo) reduces the base JavaScript weight of pages to 21kB
 - [x] State management with [redux](https://github.com/reactjs/redux)
