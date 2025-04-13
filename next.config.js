@@ -2,7 +2,8 @@ const { WEBPACK_LAYERS } = require('next/dist/lib/constants');
 
 module.exports = require('next-plugin-preact')({
   experimental: {
-    esmExternals: false // https://github.com/preactjs/next-plugin-preact/issues/61
+    esmExternals: false, // https://github.com/preactjs/next-plugin-preact/issues/61
+    scrollRestoration: true
   },
   images: {
     remotePatterns: [
