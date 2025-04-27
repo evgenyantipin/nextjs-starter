@@ -1,5 +1,6 @@
 import Layout from 'layouts/Main';
 import Carousel from 'components/Carousel';
+import AccordionDemo from 'components/Accordion'
 import { getPost } from 'api/posts';
 import styles from './Post.module.css';
 import { IPost } from 'types/IPost';
@@ -23,6 +24,7 @@ const PostPage = ({ post }: PageProps) => (
       <h1>{post.title}</h1>
       <Carousel />
       <p>{post.body}</p>
+      <AccordionDemo/>
     </div>
   </Layout>
 );
