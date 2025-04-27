@@ -37,8 +37,9 @@ const AccordionDemo = () => (
   </Accordion.Root>
 );
 
+/* eslint-disable react/display-name */
 const AccordionTrigger = React.forwardRef(
-  ({ children, className, ...props }, forwardedRef) => (
+  ({ children, className, ...props }: any, forwardedRef) => (
     <Accordion.Header className={styles.AccordionHeader}>
       <Accordion.Trigger
         className={classNames(styles.AccordionTrigger, className)}
@@ -53,7 +54,7 @@ const AccordionTrigger = React.forwardRef(
 );
 
 const AccordionContent = React.forwardRef(
-  ({ children, className, ...props }, forwardedRef) => (
+  ({ children, className, ...props }: any, forwardedRef) => (
     <Accordion.Content
       className={classNames(styles.AccordionContent, className)}
       {...props}
