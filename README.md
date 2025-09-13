@@ -1,4 +1,4 @@
-This is a fully working example of Next.js >= 15.3 running on Preact instead of React.
+This is a fully working example of Next.js running on Preact instead of React.
 
 This reduces the base JavaScript weight of pages to ~22kB.
 
