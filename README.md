@@ -5,7 +5,7 @@ This reduces the base JavaScript weight of pages to ~22kB.
 ### 🚀Blazing fast Next.js starter app with the following:
 
 ![Screenshot](pagespeed-insights1.png)
-## Works up to Next.js 16.0.6 ✅
+## Works up to Next.js 16.1.1 ✅
 ## [You can see a live demo](https://nextjs-starter-gamma.vercel.app/)
 - [x] Next.js + Preact >= 10.28.0 = 21kB
 - [x] Radix-ui Radix Primitives https://www.radix-ui.com/
