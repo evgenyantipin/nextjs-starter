@@ -3605,7 +3605,7 @@ postcss@^8.4.14, postcss@^8.4.18:
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
 
-preact-render-to-string@^6.6.4:
+preact-render-to-string@^6.6.5:
   version "6.6.5"
   resolved "https://registry.yarnpkg.com/preact-render-to-string/-/preact-render-to-string-6.6.5.tgz#1be84cc8565e3bcfcf2a33cb9c61185e6498ab31"
   integrity sha512-O6MHzYNIKYaiSX3bOw0gGZfEbOmlIDtDfWwN1JJdc/T3ihzRT6tGGSEWE088dWrEDGa1u7101q+6fzQnO9XCPA==
