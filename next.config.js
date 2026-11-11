@@ -1,6 +1,9 @@
 const { WEBPACK_LAYERS } = require('next/dist/lib/constants');
 
 module.exports = require('next-plugin-preact')({
+  // корень проекта — эта папка. Иначе Next 16 находит package.json/yarn.lock в домашней папке сервера,
+  // считает корнем её и кладёт server.js во вложенную папку .next/standalone/<проект>/ (PM2 его не находит → 502)
+  outputFileTracingRoot: __dirname,
   experimental: {
     esmExternals: false, // https://github.com/preactjs/next-plugin-preact/issues/61
     scrollRestoration: true
